@@ -103,7 +103,13 @@ body {
   animation: 1s grow ease-out;
   display: flex;
   flex-direction: row;
+  justify-content: start;
   align-items: center;
+}
+
+#logo {
+  height: 50px;
+  margin-right: 15px;
 }
 
 .logo a {
@@ -170,8 +176,9 @@ ul {
 }
 
 @media screen and (max-width: 1450px) {
-  .logo a {
-    margin-left: 20%;
+  #logo {
+    margin-left: 20px;
+    margin-right: 15px;
   }
 }
 
@@ -243,6 +250,17 @@ ul {
 
   .btn-navbar {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo a {
+    font-size: 25px;
+  }
+
+  #logo {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
